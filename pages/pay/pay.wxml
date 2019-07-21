@@ -1,0 +1,3 @@
+ <view class='button-map' bindtap="balancePay">
+     余额支付
+</view> 

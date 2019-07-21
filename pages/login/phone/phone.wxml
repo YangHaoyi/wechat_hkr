@@ -1,0 +1,14 @@
+
+<view class='line'/>
+<view class="input-container">
+  <view class='input-notice'>
+    手机号
+  </view>
+  <input class ="input-view" type="text" placeholder="请输入手机号"                        bindinput="bindKeyInput" maxlength="11" placeholder-style="color=#999999"/>
+</view>
+
+<view class=
+"{{inputPhone?'button-clickable':'button-unclickable'}}"
+                  bindtap='nextStep'> 
+  <text style='color:#ffffff'>下一步 </text>
+</view>

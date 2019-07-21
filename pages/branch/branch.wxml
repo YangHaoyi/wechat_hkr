@@ -1,0 +1,29 @@
+<scroll-view scroll-y="true" class="scroll-content">
+  <block wx:for="{{carList}}" wx:key="key" wx:for-item="itemName">
+    <view class='item-content'>
+
+      <view class='car-info-content'>
+
+        <view class='vno-content'>
+          <image class="vno" src="../../images/vno.png"></image>
+          <view class='vno-text'>
+            {{itemName.vno}}
+          </view>
+        </view>
+
+        <view class='car-info'>
+          <view>{{itemName.vehicleMode.vehicleModelName}}</view>
+          <view>{{itemName.vehicleMode.vehicleModelStr}}</view>
+        </view>
+
+        <image class="car" src="{{itemName.vehicleMode.pictureUrl}}"></image>
+
+      </view>
+
+      <view class='button-map' bindtap='bookCar' 
+      data-hi="{{itemName.vehicleId}}">
+      立即预约</view>
+
+    </view>
+  </block>
+</scroll-view>

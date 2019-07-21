@@ -1,0 +1,21 @@
+<view class='line'/>
+
+<view class='code-notice'>
+  已发送验证码短信到
+</view>
+
+<view class='phone-no'>
+  {{phoneNo}}
+</view>
+
+<view class="input-container">
+  <view class='input-notice'>
+    验证码
+  </view>
+<input class ="input-view" type="text" placeholder="输入验证码"                         maxlength="4" bindinput="bindCodeInput"                                         placeholder-style="color=#999999"/>
+</view>
+
+<view class="{{inputCode?'button-clickable':'button-unclickable'}}"
+                  bindtap='login'> 
+          登录
+</view>

@@ -1,0 +1,27 @@
+<template name="carItem">
+
+  <view class='item-content'>
+
+    <view class='car-info-content'>
+
+      <view class='vno-content'>
+        <image class="vno" src="../../images/vno.png"></image>
+        <view class='vno-text'>
+          {{itemName.vno}}
+        </view>
+      </view>
+
+      <view class='car-info'>
+        <view>222</view>
+        <view>333</view>
+      </view>
+
+      <image class="car" src="../../images/default_car.png"></image>
+
+    </view>
+
+    <view class='button-map'>666</view>
+
+  </view>
+
+</template>

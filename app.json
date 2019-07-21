@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/map/map",
+    "pages/login/phone/phone",
+    "pages/login/code/code",
+    "pages/order/order",
+    "pages/branch/branch",
+    "pages/pay/pay",
+    "pages/pay/success/paySuccess"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

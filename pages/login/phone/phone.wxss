@@ -1,0 +1,42 @@
+
+.input-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.input-notice{
+  display: flex;
+  color: #1fa67b;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 15rpx;
+}
+
+.input-view{
+  display: flex;
+  flex: 1;
+  padding: 15rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+.line{
+  background: #f2f2f2;
+  height: 1rpx;
+}
+
+.next-button{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  height: 38rpx;
+  background: #1fa67b;  
+  width: 90%;  
+  padding: 20rpx 0;  
+  border-radius: 10rpx; 
+  margin: 5% 5%;
+  text-align: center;  
+  font-size:16px;
+}

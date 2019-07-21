@@ -1,0 +1,48 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+.button-clickable{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  height: 38rpx;
+  background: #1fa67b;  
+  width: 90%;  
+  padding: 20rpx 0;  
+  border-radius: 10rpx; 
+  margin: 5% 5%;
+  text-align: center;  
+  font-size:16px;
+  color: #ffffff;
+}
+.button-unclickable{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
+  height: 38rpx;
+  background: #1fa67b;  
+  width: 90%;  
+  padding: 20rpx 0;  
+  border-radius: 10rpx; 
+  margin: 5% 5%;
+  text-align: center;  
+  font-size:16px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+
+
+.line{
+  background: #f2f2f2;
+  height: 1rpx;
+}

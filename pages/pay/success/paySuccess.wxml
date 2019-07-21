@@ -1,0 +1,6 @@
+<image class="pay-image" src="../../../images/pic_pay_success.png"></image>
+
+
+<view class='pay-text'> 支付成功</view>
+
+<view class='button-pay' bindtap='paySuccess'> 确定 </view>

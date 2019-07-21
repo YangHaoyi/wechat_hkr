@@ -1,0 +1,38 @@
+.code-notice{
+  display: flex;
+  justify-content: center;
+  color: #999999;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.phone-no{
+  display: flex;
+  justify-content: center;
+  color: #1fa67b;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.input-notice{
+  display: flex;
+  color: #1fa67b;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 15rpx;
+}
+
+.input-view{
+  display: flex;
+  flex: 1;
+  padding: 15rpx;
+  font-size: 30rpx;
+  color: #333333;
+}

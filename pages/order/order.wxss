@@ -1,0 +1,129 @@
+.item-body{
+  display: flex;
+  flex-direction: column;
+}
+.button-map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 38rpx;
+  background: #1fa67b;  
+  width: 90%;  
+  padding: 20rpx 0;  
+  border-radius: 10rpx; 
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30rpx;
+  text-align: center;  
+  font-size:16px;
+  color: #ffffff;
+}
+
+.vno-content{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 140rpx;
+  height: 60rpx;
+  margin-top: 60rpx;
+  margin-left: 6%;
+}
+
+.vno{
+  width: 140rpx;
+  height: 60rpx;
+}
+.vno-text{
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  position:absolute;
+  display: flex;
+  text-align: center;
+  font-size: 25rpx;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.item-content{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.car-info-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.car-info{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 30rpx; 
+  text-align: center;
+  justify-content: center;
+}
+
+.car{
+  width: 200rpx;
+  height: 130rpx;
+  margin-right: 6%;
+}
+.scroll-content{
+  height: 100vh;
+}
+
+.order-detail-title{
+  font:25rpx "microsoft yahei"; 
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content:center;
+  color: #999999;
+}
+.order-detail-value{
+  font:30rpx "microsoft yahei"; 
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content:center;
+  color: #333333;
+}
+
+.order-line{
+  display: flex;
+  height: 1rpx;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background: #f2f2f2;
+}
+.order-line1{
+  height: 2rpx;
+  line-height: 2rpx;
+  background: #f2f2f2;
+  display: block;
+}
+
+.bill-title{
+  font-size: 20rpx;
+}
+.bill-content{
+  margin-left: 10rpx;
+  font-size: 20rpx;
+}
+.take-car-shop{
+  display:flex;
+  flex-direction: row;
+  margin-top:10rpx;
+}
+.action-list{
+display:flex;
+flex-direction:row;                                                   justify-content:space-between;
+flex:1;
+}
+.view-hide{
+    display: none;
+}

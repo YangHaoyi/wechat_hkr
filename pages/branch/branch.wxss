@@ -1,0 +1,76 @@
+.item-body{
+  display: flex;
+  flex-direction: column;
+}
+.button-map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 38rpx;
+  background: #1fa67b;  
+  width: 90%;  
+  padding: 20rpx 0;  
+  border-radius: 10rpx; 
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 30rpx;
+  text-align: center;  
+  font-size:16px;
+  color: #ffffff;
+}
+
+.vno-content{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 140rpx;
+  height: 60rpx;
+  margin-top: 60rpx;
+  margin-left: 6%;
+}
+
+.vno{
+  width: 140rpx;
+  height: 60rpx;
+}
+.vno-text{
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  position:absolute;
+  display: flex;
+  text-align: center;
+  font-size: 25rpx;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.item-content{
+  display: flex;
+  flex-direction: column
+  ;
+}
+
+.car-info-content{
+  display: flex;
+  flex-direction: row;
+}
+
+.car-info{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 30rpx; 
+  text-align: center;
+  justify-content: center;
+}
+
+.car{
+  width: 200rpx;
+  height: 130rpx;
+  margin-right: 6%;
+}
+.scroll-content{
+  height: 100vh;
+}
+

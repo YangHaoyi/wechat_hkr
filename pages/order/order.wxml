@@ -1,0 +1,124 @@
+
+<view class='item-content'>
+
+  <view class='car-info-content'>
+
+    <view class='vno-content'>
+      <image class="vno" src="../../images/vno.png"></image>
+      <view class='vno-text'>
+        {{carInfo.vno}}
+      </view>
+    </view>
+
+    <view class='car-info'>
+      <view style='font-size:20rpx;'>{{carInfo.vehicleMode.vehicleModelName}}</view>
+      <view style='font-size:20rpx;'>{{carInfo.vehicleMode.seatsNumber}}座/{{carInfo.vehicleMode.vehicleModelStr}}</view>
+    </view>
+
+    <image class="car" src="{{carInfo.vehicleMode.pictureUrl}}"></image>
+
+  </view>
+
+  <view class='order-line'/>
+
+  <view style="display: flex;flex-direction: row;justify-content:space-between;               margin-left:6%;margin-right:6%;">
+        <view class='order-detail-title'>
+            行驶里程
+        </view>
+        <view class='order-detail-title'>
+            租用时长
+        </view>
+        <view class='order-detail-title'>
+            消费金额
+        </view>
+  </view>
+
+  <view style="display: flex;flex-direction: row;justify-content:space-between;               margin-left:6%;margin-right:6%;margin-top:10rpx;">
+        <view class='order-detail-value'>
+            {{realTimeInfo.vehicleMileage}}公里
+        </view>
+        <view class='order-detail-value'>
+            {{realTimeInfo.spendsTime}}分钟
+        </view>
+        <view class='order-detail-value'>
+        <!-- ￥{{realTimeInfo.rentalCost}} -->
+            <block wx:if="{{realTimeInfo.rentalCost>0}}"> 
+              ￥{{filters.toFix(realTimeInfo.rentalCost)}} 
+            </block>
+             
+        </view>
+  </view>
+   <view class='order-line1'/> 
+
+<!-- 计价规则 -->
+  <view style='margin-top:10rpx;'>
+    <block wx:for="{{appStyle}}" wx:key="key" wx:for-item="itemName">
+        <view style='display:flex;flex-direction: row;justify-content:center;                          margin-top:10rpx;'>
+
+          <!-- <view style='display:flex;flex-direction: row;justify-content:start;'> -->
+            <view style='background:{{itemName.color}};font-size:20rpx;                                    color:#ffffff;padding:5rpx;' >
+                {{itemName.title}}
+            </view>
+            <view class='bill-content'>{{itemName.content}}</view>
+
+          <!-- </view> -->
+
+        </view>
+    </block>
+  </view>
+
+<!-- 取车网点 -->
+  <view class="take-car-shop">
+    <view style='font-size:25rpx;color:#999999;margin-left:6%;'>取车网点</view>
+    <view style='font-size:30rpx;color:#333333;display:flex;flex:1;margin-left:10rpx;'>{{startBranch.name}}</view>
+  </view>
+<!-- 还车网点 -->
+  <view class="{{orderCurrent.orderStatus==4?'take-car-shop':'view-hide'}}" >
+    <view style='font-size:25rpx;color:#999999;margin-left:6%;'>还车网点</view>
+    <view style='font-size:30rpx;color:#333333;display:flex;flex:1;margin-left:10rpx;'>{{startBranch.name}}</view>
+  </view>
+<!-- 操作记录 -->
+  <view style='display:flex;flex-dirction:row;margin-top:10rpx;'>
+
+      <view style='font-size:25rpx;color:#999999;margin-left:6%;'>操作记录</view>
+
+      <view style='display:flex;flex-direction: column;flex:1;margin-right:6%;'>
+
+          <view style='display:flex;flex-direction:row;                                                   justify-content:space-between;flex:1;'>
+                <view style='font-size:30rpx;color:#333333;margin-left:10rpx;'>   
+                    {{bookTime}} </view>
+                <view style='font-size:30rpx;color:#333333;'>预约时间</view>
+          </view>
+
+          <view class="{{orderCurrent.orderStatus>1?'action-list':'view-hide'}}">
+                <view style='font-size:30rpx;color:#333333;margin-left:10rpx;'>   
+                    {{billingStartTime}} </view>
+                <view style='font-size:30rpx;color:#333333;'>取车时间</view>
+          </view>
+
+          <view class="{{orderCurrent.orderStatus>2?'action-list':'view-hide'}}">
+                <view style='font-size:30rpx;color:#333333;margin-left:10rpx;'>   
+                    {{billingEndTime}} </view>
+                <view style='font-size:30rpx;color:#333333;'>还车时间</view>
+          </view>
+
+      </view>
+
+  </view>
+
+
+  <view class='button-map' bindtap='controlCar'>
+    <block wx:if="{{orderCurrent.orderStatus==1}}"> 
+              取车
+    </block>
+     <block wx:if="{{orderCurrent.orderStatus==2}}"> 
+              还车
+    </block>
+    <block wx:if="{{orderCurrent.orderStatus==4}}"> 
+              立即支付
+    </block>
+  </view>
+
+</view>
+
+<wxs module="filters" src="addmul.wxs"></wxs>
